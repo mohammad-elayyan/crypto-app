@@ -9,6 +9,7 @@ const Home = () => {
       <div className="w-screen h-screen bg-gray-300 fixed -z-10" />
       <Logo />
       <Navigation />
+
       <Outlet />
     </main>
   );

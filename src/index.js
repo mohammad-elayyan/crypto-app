@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Crypto from "./pages/Crypto";
 import Trending from "./pages/Trending";
 import Saved from "./pages/Saved";
+import { CryptoProvider } from "./context/CryptoContext";
 
 const router = createBrowserRouter([
   {
@@ -29,11 +30,14 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <RouterProvider router={router} />
+    <CryptoProvider>
+      {/* <App /> */}
+      <RouterProvider router={router} />
+    </CryptoProvider>
   </React.StrictMode>
 );
 

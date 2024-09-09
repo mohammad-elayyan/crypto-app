@@ -5,7 +5,7 @@ const Navigation = () => {
   return (
     <nav className="w-[40%] mt-16 flex justify-around align-middle border border-cyan rounded-lg">
       <NavLink
-        to={"/"}
+        to="/"
         className={({ isActive }) => {
           return `w-full text-base text-center font-nunito m-2.5 ${
             isActive
@@ -29,7 +29,7 @@ const Navigation = () => {
         Trending
       </NavLink>
       <NavLink
-        to={"/saved"}
+        to="/saved"
         className={({ isActive }) => {
           return `w-full text-base text-center font-nunito m-2.5 ${
             isActive
